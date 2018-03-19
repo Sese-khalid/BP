@@ -39,42 +39,39 @@ nav
 {
 	text-decoration:none;
 	padding-bottom: 10%;
+	letter-spacing: 6px;
+	width: 8000px;
 }
 
 body {
 	position: relative;
 }
 
-
-body > img.sign 
-{
-	
+body > img.float-right {
+	left: 15%;
 }
+
+article.opensign {
+	padding-left: 40%;
+}
+
 /* Body Header Styles */
 
-Body > header {
-	
-}
-
-body > header > nav {
-	
-}
 
 
 
 /* Aside */
 
 aside {
-	bottom: 30%;
+	padding-left: 10%;
+
 }
 
 
 /* Footer Styles */
 
 footer {
-	position: absolute;
-	right: 8px;
-	bottom: 40%;
+	right: 50%;
+	left: 50%;
 	font-size: 2vmin
-	style= "text-align:right"
 }
