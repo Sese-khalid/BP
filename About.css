@@ -51,6 +51,12 @@ body > img.float-right {
 	left: 15%;
 }
 
+#grass {
+		margin: auto;
+		display: block;
+		
+}
+
 article.opensign {
 	padding-left: 40%;
 }
@@ -74,4 +80,6 @@ footer {
 	right: 50%;
 	left: 50%;
 	font-size: 2vmin
+	height: 100px; 
+	width:100%;
 }
