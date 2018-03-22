@@ -1,22 +1,32 @@
 ﻿@charset "utf-8";
+
 /*
    BP Project
 */
 
 
 /* Window and Body Styles */
-html {
-	background-color: rgb(101, 101, 101)
+
+
+
+html {  
+	
+}
+
+body.clouds
+{
+	display: block;
+	background-repeat: repeat-x;
 }
 
 body
 {
-	Background-color: white;
-	font-family: verdana, geneva, "sans-serif"
-	margins: 20px, auto
-	width: 95%;
-	min-width: 320px;
-	max-width: 960px;
+	background-color: #2fccc4;
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+	margins: auto, auto
+	width: 100%;
+	min-width: auto;
+	max-width: auto;
 }
 
 img
@@ -28,63 +38,48 @@ img
 nav
 {
 	text-decoration:none;
+	padding-bottom: 10%;
+	letter-spacing: 6px;
+	width: 8000px;
 }
 
 body {
 	position: relative;
 }
 
+body > img.float-right {
+	left: 15%;
+}
+
+#grass {
+		margin: auto;
+		display: block;
+		
+}
+
+article.opensign {
+	padding-left: 40%;
+}
+
 /* Body Header Styles */
 
-Body > header {
-	background-color:rgb(191,68, 70);
-	height: 40px;
-}
 
-body > header > nav > ul > li {
-	display: block;
-	float:left;
-	padding-top:10px;
-	padding-bottom: 10px;
-	padding-left:0;
-	padding-right:0;
-	margin-right:20px;
-}
 
-body > header > nav > a:link, body > header > nav > a:visited{
-	font-size:.9em
-	color: rgb(51, 51, 51)
-	
-}
 
-body > header > nav > a:hover, body > header > nav > a:active{
-	font-size:.9em
-	color: rgb(255, 211, 211)
-	
-}
+/* Aside */
 
-/* DIV Container Styles */
+aside {
+	padding-left: 10%;
 
-div[id="container"] {
-	padding-right: 8px;
-	padding-bottom: 8px
-}
-
-div[id="container"] {
-	display: block;
-	width: 100%;
-	padding-top: 8px;
-	padding-left: 8px;
 }
 
 
 /* Footer Styles */
 
 footer {
-	position: absolute;
-	right: 8px;
-	bottom: 8px;
-	color: rgb(143, 33, 36);
+	right: 50%;
+	left: 50%;
 	font-size: 2vmin
-	style= "text-align:right"
+	height: 100px; 
+	width:100%;
 }
