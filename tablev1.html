@@ -1,0 +1,94 @@
+<!DOCtYPE html>
+
+<html>
+
+<head>
+<title>Inputs to a table</title>
+
+<style>
+</style>
+
+</head>
+
+<body>
+
+<form>
+	Name: <input type="text" id="name" size="20"><br><br>
+	Gender: <select name="gender" id="gender">
+			<option value="f" selected>Female</option>
+			<option value="m">Male</option>
+			<option value="o">Other</option>
+		</select><br><br>
+	<button type="button" onclick="process(Title, First, Middle, Last, Suffix, Payrate, Hours)">Submit</button><br><br>//the button creates the connection between the array and the process function, by naming the parameters by the array 
+</form>
+
+<table style="width:50%">
+<tr>
+	<th align="center">Title</th>
+	<th align="center">First Name</th>
+	<th align="center">Middle Initial</th>
+	<th align="center">Last Name</th>
+	<th align="center">Suffix</th>
+	<th align="center">Payrate</th>
+	<th align="center">Hours</th>
+	
+</tr>
+<tr>
+	<td align="center" id="tname"></td>
+	<td align="center" id="tFirst"></td>
+	<td align="center" id="tMiddle"></td>
+	<td align="center" id="tLast"></td>
+	<td align="center" id="tSff"></td>
+	<td align="center" id="tPay"></td>
+	<td align="center" id="tHours"></td>
+</tr>
+</table>
+
+<script>
+var Title = []; // this is an array
+var First = [];
+var Middle = [];
+var Last = [];
+var Suffix = [];
+var Payrate = [];
+var Hours = [];
+
+function process(an,ag)// function that can have two parameters, an is an array of names and ag is an array of genders 
+{
+	var g=gender(document.getElementById("gender").value);
+	var n=document.getElementById("name").value;
+	document.getElementById("tname").innerHTML+=n+"<br>";// getting the information from the form -allows you to add names with submit
+	document.getElementById("tgender").innerHTML+=g+"<br>"; // allows you to add gender with submit
+	document.getElementById("name").value="";
+	an.push(n);// add the name and gender to the end of each array, the user adds to the array
+	ag.push(g);
+	loadTable(an,ag);//shows what is in the array
+}
+
+function loadTable(an, ag)
+{
+	var tn = document.getElementById("tname"); // gets the information from the array 
+	var tg = document.getElementById("tgender");
+	tn.innerHTML = ""; //clears values from the array
+	tg.innerHTML = "";
+	for (var i=0; i<an.length; i++) {
+		tn.innerHTML += an[i]+"<br>";
+		tg.innerHTML += ag[i]+"<br>";
+	}
+}
+
+function gender(gen)
+{
+	switch(gen)
+	{
+		case "f":	return "Female";
+		case "m":	return "Male";
+		case "o":	return "Other";
+		default:	return "Unknown";
+	}
+}
+</script>
+
+</body>
+
+</html>
