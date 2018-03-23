@@ -1,0 +1,82 @@
+﻿@charset "utf-8";
+
+/*
+   BP Project
+https://htmlcolorcodes.com/
+*/
+
+
+/* Window and Body Styles */
+
+
+
+html {  
+	
+}
+
+body.clouds
+{
+	display: block;
+	background-repeat: repeat-x;
+}
+
+body
+{
+	background-color: #2fccc4;
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+	margins-left: 10px;
+	width: 100%;
+	min-width: auto;
+	max-width: auto;
+}
+
+
+
+nav
+{
+	text-decoration:none;
+	padding-bottom: 10%;
+	letter-spacing: 6px;
+	width: 8000px;
+}
+
+
+/* Div */
+
+#nav2 {
+	margin-right: 65%;
+	background-color: #5CEE63;
+	width: 100%;
+	margin-top:6%;
+	position: absolute;
+}
+
+#nav {
+	margin-right: 75%;
+	
+}
+
+/* Table */
+
+#table {
+	margin-bottom: 100%;
+	width: 75%;
+	float: right;
+}
+
+#tTable {
+	background-color: #B1E62C;
+}
+
+#tTTable {
+	background-color: #9BE62C;
+}
+
+
+/* Footer Styles */
+
+footer {
+	right: 50%;
+	left: 50%;
+	font-size: 2vmin
+}
