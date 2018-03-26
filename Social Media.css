@@ -9,23 +9,23 @@
 
 
 
-html {  
-	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-}
+
 
 
 
 body
 {
 	background-color: #2fccc4;
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+	margins-left: 10px;
 	width: 100%;
 	min-width: auto;
+	max-width: auto;
 }
 
 img
 {
-	display: block;
-	width:100%;
+	
 }
 
 nav
@@ -53,13 +53,19 @@ body {
 
 
 /* Body Header Styles */
-div#background {
-	background-image: url("images/newspaper.png");
-	height: 25%;
-	width: 100%;
+#background {
+	background: no-repeat;
+	float:left;
+	margin-top: 30px;
+	
+	
 }
 
-
+#video{
+	float: right;
+	padding-bottom: -3px;
+	
+}
 
 /* Aside */
 
@@ -72,9 +78,9 @@ aside {
 /* Footer Styles */
 
 footer {
+	bottom: 80%;
 	right: 50%;
 	left: 50%;
-	
 	height: 100px; 
 	width:100%;
 }

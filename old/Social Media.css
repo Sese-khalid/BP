@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+
+/*
+   BP Project
+*/
+
+
+/* Window and Body Styles */
+
+
+
+html {  
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+
+
+body
+{
+	background-color: #2fccc4;
+	width: 100%;
+	min-width: auto;
+}
+
+img
+{
+	display: block;
+	width:100%;
+}
+
+nav
+{
+	text-decoration:none;
+	padding-bottom: 10%;
+	letter-spacing: 6px;
+	width: 800px;
+}
+
+
+body {
+	position: relative;
+}
+
+
+
+
+#grass {
+		margin: auto;
+		display: block;
+		
+}
+
+
+
+/* Body Header Styles */
+div#background {
+	background-image: url("images/newspaper.png");
+	height: 25%;
+	width: 100%;
+}
+
+
+
+/* Aside */
+
+aside {
+	padding-left: 10%;
+
+}
+
+
+/* Footer Styles */
+
+footer {
+	right: 50%;
+	left: 50%;
+	
+	height: 100px; 
+	width:100%;
+}
