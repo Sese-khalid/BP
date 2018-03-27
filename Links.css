@@ -1,0 +1,51 @@
+﻿@charset "utf-8";
+
+/*
+   BP Project
+https://htmlcolorcodes.com/
+*/
+
+
+/* Window and Body Styles */
+
+
+
+body
+{
+	background-color: #2fccc4;
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+	margins-left: 10px;
+	width: 100%;
+	min-width: auto;
+	max-width: auto;
+}
+
+
+
+nav
+{
+	text-decoration:none;
+	padding-bottom: 10%;
+	letter-spacing: 6px;
+	width: 100%;
+	font-size: 150%;
+}
+
+
+/* Div */
+
+	
+}
+
+/* Table */
+
+
+
+
+/* Footer Styles */
+
+footer {
+	right: 50%;
+	left: 50%;
+	font-size: 2vmin
+}
