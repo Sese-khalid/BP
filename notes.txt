@@ -1,0 +1,105 @@
+﻿footer {
+	right: 50%;
+	left: 50%;
+	font-size: 2vmin;
+	height: 100px; 
+	width: 100%; 
+}
+
+body
+{
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+	margins: auto, auto
+	width: 100%;
+	min-width: auto;
+	max-width: auto;
+}
+
+body> article > #block {
+	float: right;
+}
+article.opensign {
+	padding-left: 40%;
+}
+
+<article id="opensign">
+<img style="width:10%;height:auto;" src="Images/open.jpg" alt="Open sign"/>
+</article>
+
+
+<div id="testimonials" class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Hours </div>
+  <div class="card-body">
+    <h5 class="card-title">Success card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+<blockquote id="testimonials" class="double" style="border-style: double;" >
+	Monday: 9am-3pm <br>
+	Tuesday: 9am-3pm <br>
+	Wednesday: 9am-7pm <br>
+	Thursday: 9am-3pm <br>
+	Friday: 9am-5pm <br>
+    "Thank you for such an excellent service." <br>
+	"Thank you for such an excellent service." <br>
+   "Thank you for such an excellent service." <br>
+	"Thank you for such an excellent service." <br>
+    "Thank you for such an excellent service." <br>
+	</blockquote>
+
+
+
+<div class=”slider”>
+ <div class=”slidercontainer”>
+ <div class=”sliderspot spot1"> </div>
+ <ul id=”sliderul”>
+ <li class=”slidercontent”> “The first quotation.”
+ <span> This first author. </span> </li>
+ <li class=”slidercontent”> “The second quotation.” <span> The second author. </span> </li>
+ </ul>
+ <div class=”sliderspot spot2"> </div>
+ </div>
+</div>
+
+
+
+$(“.slidercontent”).hide();
+
+$(“.slidercontent:nth-child(1)”).fadeIn(“slow”); // Make all content disappear, then fadeIn just the first quote.
+
+var current = 1; var max = $( “li” ).length +1; // Create some variables to control which child we are going to access. We’ll start at one, and define max as the number of children +1. I’ll explain the add 1 below.
+
+function changeUp() { 
+
+	$(“.slidercontent”).hide(); 
+	current += 1; 
+
+   if (current === max) { 
+       current = 1; 
+	} 
+	$(“.slidercontent:nth-child(“ + current + “)”).fadeIn(“slow”); } // Create a function that will hide all slider li’s and then show the sibling of the previous li shown. We do this by adding 1 to our current value, and showing that child. If the child reaches the last one, then it will reset to 1 and start again from the beginning.
+
+function changeDown() { 
+	$(“.slidercontent”).hide(); 
+	current -= 1;
+    if (current === 0) { 
+	current = max — 1; 
+   	}
+
+$(“.slidercontent:nth-child(“ + current + “)”).fadeIn(“slow”); } //Create a very similar function to change down. I’ll let you work this one out yourself.
+
+$(“.sliderspot2”).click(function() { changeUp(); });
+
+$(“.sliderspot”).click(function() { changeDown(); }); // Use click event handlers to attach these to our “spots” that will then navigate up and down our quotes.
+
+function startChange() { changeIt = setInterval(function(){ changeUp(); }, 10000); }; // Make the changeUp function happen every 10 seconds, and wrap this in a function to call it when you want.
+
+function stopChange() { clearInterval(changeIt); } //Next let’s make a function to stop the automatic change so we can call it when we want.
+
+$(“.sliderspot2”).click(function() { stopChange(); changeUp(); startChange(); });
+
+$(“.sliderspot”).click(function() { stopChange(); changeDown(); startChange(); }); // The problem now is that if a user changes the quote, it might stay for just a few seconds before the automatic timing kicks in and changes the quote. So, lets modify our click handlers to stop the automatic timing, change the quote, then restart the automatic timing so it stays for 10 seconds.
+
+startChange();
+startChange();

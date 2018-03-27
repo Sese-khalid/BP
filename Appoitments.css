@@ -37,7 +37,9 @@ nav
 	text-decoration:none;
 	padding-bottom: 10%;
 	letter-spacing: 6px;
-	width: 8000px;
+	width: 80px;
+	margin-left:30px;
+	font-size: 30px;
 }
 
 
@@ -103,14 +105,52 @@ nav
 
 /* Footer Styles */
 
-#chart {
-	margin-top: 100px;
+#grass3 {
+	width: 300px;
+	background-repeat:repeat-x;
 	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	 z-index: -1;
+} 
+
+#grass {
+	width: 250px;
+	background-repeat:repeat-x;
+	float: right;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+	 z-index: -1;
 }
+#grass2 {
+	width: 310px;
+	background-repeat:repeat-x;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	 z-index: -1;
+}
+#grass4 {
+	width: 300px;
+	background-repeat:repeat-x;
+	margin-right: 20px;
+	 z-index: -1;
+}
+
 footer {
-	right: 50%;
-	left: 50%;
-	font-size: 2vmin;
-	height: 100px; 
-	width: 100%; 
+	background-image:url(Images/Grass.png);
+    	background-repeat:no-repeat;
+
+
+}
+
+#chart {
+	margin-top: 850px;
+	margin-left: 350px;
+	float: right;
+	z-index:1;
+	position: absolute;
 }

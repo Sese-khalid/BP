@@ -8,16 +8,17 @@
 /* Window and Body Styles */
 
 
+.slider { width: 100%; background-color: lightgray; margin: 10px auto; height: 200px; }
+.slidercontainer { width: 85%; height: 200px; margin: 0px auto; }
+.sliderspot { width: 15px; height: 15px; border-radius: 100%; background-color: gray; display: inline; cursor: pointer; cursor: hand; }
+.sliderspot:hover { background-color: black; }
+.spot1 { margin: 85px 30px; float: left; }
+.spot2 { margin: 85px 30px; float: right; }
+#sliderul { list-style-type: none; margin-left: 4%; width: 75%; text-align: center; height: 150px; padding: 10px; line-height: 30px; display: inline-block; }
+.slidercontent { margin-top: 20px; font-size: 20px; color: #1D1F20; }
+.slidercontent span { font-size: 18px; display: block; margin-top: 10px; color: #343436; }
 
-html {  
-	
-}
 
-body.clouds
-{
-	display: block;
-	background-repeat: repeat-x;
-}
 
 blockquote{
 	display : block;
@@ -26,38 +27,42 @@ blockquote{
 
 body
 {
-	background-color: #2fccc4;
 	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-	margins: auto, auto
-	width: 100%;
-	min-width: auto;
-	max-width: auto;
+
 }
 
-img
-{
-	display: block;
-	width:100%
+ #testimonials {
+	float: right;
+	margin-bottom: 20%;
+	font-size: 25px;
+	width: 40%;
+	margin-right: 60px;
+	margin-top: 250px;
 }
+
 
 nav
 {
 	text-decoration:none;
 	padding-bottom: 10%;
 	letter-spacing: 6px;
-	width: 8000px;
+	width: 300px;
+	font-size: 30px;
 }
 
-body {
-	position: relative;
+
+#opensign {
+	float: left;
+	margin-bottom: 30%;
+	margin-left: 50px;
 }
 
-body > img.float-right {
-	left: 15%;
-}
+#grass {
+    background-repeat:space;
+    width: 1000px;
+    float: center;
 
-article.opensign {
-	padding-left: 40%;
+
 }
 
 /* Body Header Styles */
@@ -68,8 +73,7 @@ article.opensign {
 /* Aside */
 
 .testimonials {
-	padding-left: 10%;
-	margin-bottom: 20%;
+	
 
 }
 
@@ -77,9 +81,6 @@ article.opensign {
 /* Footer Styles */
 
 footer {
-	right: 50%;
-	left: 50%;
-	font-size: 2vmin;
-	height: 100px; 
-	width: 100%; 
+position: absolute;
+margin-top: 90%;
 }
