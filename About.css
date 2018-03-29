@@ -8,17 +8,6 @@
 /* Window and Body Styles */
 
 
-
-html {  
-	
-}
-
-body.clouds
-{
-	display: block;
-	background-repeat: repeat-x;
-}
-
 body
 {
 	background-color: #2fccc4;
@@ -40,7 +29,8 @@ nav
 	text-decoration:none;
 	padding-bottom: 10%;
 	letter-spacing: 6px;
-	width: 8000px;
+	width: 200px;
+	font-size: 30px;
 }
 
 body {
