@@ -10,39 +10,81 @@ https://forums.adobe.com/thread/2304165
 /* Window and Body Styles */
 
 
-
-
-
-
-
 body
 {
 	background-color: #2fccc4;
 	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 	margins-left: 10px;
-	width: 100%;
+
 	min-width: auto;
 	max-width: auto;
 }
 
-img
-{
+#nav{
+	font-size: 20pt;
+}
+h1 { text-align: center; 
+		 }
 	
-}
+h2 { text-align: center;
+	color: #42ebf4; }
 
-nav
-{
-	text-decoration:none;
-	padding-bottom: 10%;
-	letter-spacing: 6px;
-	width: 800px;
-}
-
-
-body {
-	position: relative;
-}
-
+					
+ul { text-align: center; }
+li { list-style-type: none;
+		display: inline; }
+figure {
+    display: inline-block;
+	padding-right: 50px; }
+figcaption { text-align: center; 
+			margin-top: 10px;
+			margin-bottom: 10px; }
+form { text-align: center; 
+		padding: 15px; }
+button { background-color: white; 
+		color: #d2e527;
+		padding: 7px;
+		margin-top: 10px; 
+		border-radius: 10px;
+		border-color: #35e02c; }
+button:hover { background-color: #35e02c; }
+#logo { padding-top: 30px;
+		padding-left: 40px; }
+#hours { background-color: #42ebf4;
+		color: white; 
+		text-align: center; 
+		font-family: Verdana, sans-serif;
+		font-weight: bold; 
+		border-radius: 10px; 
+		float: left;
+		clear: float; 
+		margin-top: 35px; 
+		margin-left: 20px; 
+		width: 258px; 
+		height: 350px; } 
+#smallC { margin-left: 350px;
+			width: 60%;
+			margin-top: 20px; }
+#welcome { font-weight: bold; 
+			font-family: Georgia, Times New Roman;
+			font-size: 40pt; 
+			margin-top: -60px; }
+#about { margin: auto;
+		margin-top: 20px;
+		padding-top: 30px; 
+		padding-right: 20px;
+		padding-left: 20px;
+		max-width: 100%;
+		border-radius: 10px; 
+		width: 50%;
+		height: 600px; 
+		background-color: #42ebf4;
+		color: white; 
+		font-family: Verdana, sans-serif;
+		}
+#contact { text-align: center; }
+#infoPic { float: right; 
+			clear: float; }
 
 
 
@@ -59,35 +101,16 @@ body {
 #facebook{
 	position: relative;
 	z-index: 2;
-	left: 5px;
-	bottom: 200px;
+	left: 300px;
+	top: 50px;
 }
-
 
 #video{
-	position: absolute;
-	right: 650px;
-	z-index: 2;
-	top: 800px;
-	
-}
-
-#background {
-	position: absolute;
-	top: 3px;
-	left: 400px;
-	width: 100%;
-}
-
-
-
-#newspaper{
 	position: relative;
-	top: 600px;
-	right: 300px;
-	z-index: -3;
+	z-index: 2;
+	left: 350px;
+	bottom: 130px;
 }
-
 
 /* Aside */
 
@@ -99,54 +122,21 @@ body {
 
 /* Footer Styles */
 
-#grass3 {
-	width: 300px;
-	background-repeat:repeat-x;
-	float: right;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	margin-top: 20px;
-	 z-index: -1;
-} 
 
 #grass {
 	width: 250px;
-	background-repeat:repeat-x;
-	float: right;
-	margin-left: 50px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	
+	bottom: 550px;
 	 z-index: -1;
 }
-#grass2 {
-	width: 310px;
-	background-repeat:repeat-x;
-	float: left;
-	margin-left: 20px;
-	margin-top: 10px;
-	 z-index: -1;
-}
-#grass4 {
-	width: 300px;
-	background-repeat:repeat-x;
-	margin-right: 20px;
-	 z-index: -1;
+#information {
+	position: absolute;
+	top: 900px;
+	left: 200px;
+	font-size: 27pt;
 }
 
 footer {
-	background-image:url(Images/Grass.png);
-    	background-repeat:no-repeat;
-
-
-}
-
-
-footer {
-	margin-top: 20%;
-	right: 50%;
-	left: 50%;
-	height: 50px; 
-	width:100%;
-	z-index: -1;
+	background-color: #66CC33; 
+		height: 300px;
+		margin-top: 100px;
 }

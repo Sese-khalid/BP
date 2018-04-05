@@ -1,19 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+   <title>"BP Project"</title> 
+ <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="Appoitments.css">
+    <link rel="stylesheet" href="Social Media.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
-<img style="width:40%;height:auto;" src="Images/BPicon.GIF" alt="BP icon ">
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<img class="img-fluid" style="width:50%;height:auto;" src="Images/BPicon.gif" alt="BP logo"/>
+
+
+
 <nav>
 <ul class="nav nav-pills">
   <li class="nav-item">
@@ -33,34 +49,52 @@
   <li class="nav-item">
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
-   
-</ul>
-</nav>
 
-<iframe id="calendar" src="https://calendar.google.com/calendar/embed?title=BP%20project&amp;height=600&amp;wkst=1&amp;bgcolor=%2399ff99&amp;src=suzannah%40vt.edu&amp;color=%232F6309&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+ </nav>
 
+<div id="background">
+  <img id="newspaper" style="width:1300px; height:1000px;" class="img-fluid" src="Images/Newspaperfloating.gif" alt="newspaper"/>
+  <iframe  id="video" width="280" height="315" src="https://www.youtube.com/embed/YmBW4reKyPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe  id="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMiscarriageMatters%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
 
-<form id="form">
-  <div class="form-group">
-    <label for="formGroupExampleInput">Preferred name</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" name="name" placeholder="Example input">
-    <label for="formGroupExampleInput">Email</label>
-    <input type="phone" class="form-control" name="email" id="formGroupExampleInput" placeholder="Example input">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput2">Needs:</label>
-    <input type="Checkbox" class="form-control" id="formGroupExampleInput2" name="needs" value="garage"> Mechanic <br>
-    <input type="Checkbox" class="form-control" id="formGroupExampleInput2" name="needs" value="store"> Inspection <br>
-  </div>
-  <textarea name="needs"  rows="15" cols="30" id="description">
-	Please provide a short desciption of your current needs and availability for a curtesy phone call
-  </textarea>
-</form>
+<div class="fb-page" data-href="https://www.facebook.com/MiscarriageMatters/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+	<blockquote cite="https://www.facebook.com/MiscarriageMatters/" class="fb-xfbml-parse-ignore">
+	<a href="https://www.facebook.com/MiscarriageMatters/">Miscarriage Matters Inc.</a>
+</blockquote></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
+<a id="feed" width="350" height="600" class="twitter-timeline" href="https://twitter.com/BP_plc?ref_src=twsrc%5Etfw">Tweets by BP_plc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
 <footer>
 
-<div id="chart" class="row">
+<div class="row">
   <div class="col">Information</div>
   <div class="col">Information</div>
   <div class="w-100"></div>
@@ -70,6 +104,7 @@
   <div class="col">Information</div>
   <div class="col">Information</div>
 </div>
+
 <img id="grass" style="background-repeat:repeat-x;"  src="Images/Grass.png" alt="BP icon ">
 <img id="grass2"   src="Images/Grass.png" alt="BP icon ">
 <img id="grass3"   src="Images/Grass.png" alt="BP icon ">
@@ -77,7 +112,6 @@
 
 
 </footer>
-
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -92,7 +126,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  
+
 </body>
 
 </html>

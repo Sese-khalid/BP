@@ -1,0 +1,152 @@
+﻿@charset "utf-8";
+
+/*
+   BP Project
+https://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html
+https://forums.adobe.com/thread/2304165
+*/
+
+
+/* Window and Body Styles */
+
+
+
+
+
+
+
+body
+{
+	background-color: #2fccc4;
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+	margins-left: 10px;
+	width: 100%;
+	min-width: auto;
+	max-width: auto;
+}
+
+img
+{
+	
+}
+
+nav
+{
+	text-decoration:none;
+	padding-bottom: 10%;
+	letter-spacing: 6px;
+	width: 800px;
+}
+
+
+body {
+	position: relative;
+}
+
+
+
+
+#grass {
+		margin: auto;
+		display: block;
+		
+}
+
+
+
+/* Body Header Styles */
+
+#facebook{
+	position: relative;
+	z-index: 2;
+	left: 5px;
+	bottom: 200px;
+}
+
+
+#video{
+	position: absolute;
+	right: 650px;
+	z-index: 2;
+	top: 800px;
+	
+}
+
+#background {
+	position: absolute;
+	top: 3px;
+	left: 400px;
+	width: 100%;
+}
+
+
+
+#newspaper{
+	position: relative;
+	top: 600px;
+	right: 300px;
+	z-index: -3;
+}
+
+
+/* Aside */
+
+#feed {
+	position: absolute;
+
+
+}
+
+/* Footer Styles */
+
+#grass3 {
+	width: 300px;
+	background-repeat:repeat-x;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	 z-index: -1;
+} 
+
+#grass {
+	width: 250px;
+	background-repeat:repeat-x;
+	float: right;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+	 z-index: -1;
+}
+#grass2 {
+	width: 310px;
+	background-repeat:repeat-x;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	 z-index: -1;
+}
+#grass4 {
+	width: 300px;
+	background-repeat:repeat-x;
+	margin-right: 20px;
+	 z-index: -1;
+}
+
+footer {
+	background-image:url(Images/Grass.png);
+    	background-repeat:no-repeat;
+
+
+}
+
+
+footer {
+	margin-top: 20%;
+	right: 50%;
+	left: 50%;
+	height: 50px; 
+	width:100%;
+	z-index: -1;
+}
