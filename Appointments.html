@@ -11,35 +11,30 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<img style="width:40%;height:auto;" src="Images/BPicon.GIF" alt="BP icon ">
+<img style="width:10%;height:auto;" src="Images/BPiconfinal.GIF" alt="BP icon ">
+<!--Nav Bar Section -->
 <nav>
-<ul class="nav nav-pills">
+<ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" href="BP.html">Homepage</a>
+    <a class="nav-link active" href="#">Active</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="About.html">About</a>
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="Specials.html">Specials</a>
-  </li> 
-  <li class="nav-item">
-    <a class="nav-link" href="Social Media.html">BP in the news</a>
-  </li>
-	<a class="nav-link" href="Links.html">Links</a>
+    <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
-   
 </ul>
 </nav>
-
-<iframe id="calendar" src="https://calendar.google.com/calendar/embed?title=BP%20project&amp;height=600&amp;wkst=1&amp;bgcolor=%2399ff99&amp;src=suzannah%40vt.edu&amp;color=%232F6309&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
+<br> 
+<br> 
+<br> 
 <form id="form">
   <div class="form-group">
     <label for="formGroupExampleInput">Preferred name</label>
@@ -50,7 +45,7 @@
   <div class="form-group">
     <label for="formGroupExampleInput2">Needs:</label>
     <input type="Checkbox" class="form-control" id="formGroupExampleInput2" name="needs" value="garage"> Mechanic <br>
-    <input type="Checkbox" class="form-control" id="formGroupExampleInput2" name="needs" value="store"> Inspection <br>
+    <input type="Checkbox" class="form-control" id="formGroupExampleInput2" name="needs" value="store"> State Inspection <br>
   </div>
   <textarea name="needs"  rows="15" cols="30" id="description">
 	Please provide a short desciption of your current needs and availability for a curtesy phone call
@@ -58,23 +53,27 @@
 </form>
 
 
+<style>
+.mySlides {display:none;}
+</style>
+
+<div class="w3-content w3-section" >
+  <img class="mySlides w3-animate-bottom" src="Images/Reliable.png" style="width:40%">
+  <img class="mySlides w3-animate-bottom" src="Images/Honest.png" style="width:40%">
+  <img class="mySlides w3-animate-bottom" src="Images/Trustworthy.png" style="width:40%">
+</div>
+
+
 <footer>
 
-<div id="chart" class="row">
-  <div class="col">Information</div>
-  <div class="col">Information</div>
-  <div class="w-100"></div>
-  <div class="col">Information</div>
-  <div class="col">Information</div>
-  <div class="w-100"></div>
-  <div class="col">Information</div>
-  <div class="col">Information</div>
-</div>
-<img id="grass" style="background-repeat:repeat-x;"  src="Images/Grass.png" alt="BP icon ">
-<img id="grass2"   src="Images/Grass.png" alt="BP icon ">
-<img id="grass3"   src="Images/Grass.png" alt="BP icon ">
-<img id="grass4"  src="Images/Grass.png" alt="BP icon ">
 
+<img id="grass" style="background-repeat:repeat-x;"  src="Images/Grass.png" alt="BP icon ">
+
+<p id="information" ><address>Bayview BP &bull;
+			  8595 Bayview Blvd &bull;
+			  Norfolk, VA 23503 &bull;
+			  (757) 583-1355</address> Contact us: <a href="mailto:bayviewBP@yahoo.com">
+bayviewBP@yahoo.com</a>.</p>
 
 </footer>
 
@@ -92,7 +91,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  
+ 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4500);    
+}
+</script>
+
 </body>
 
 </html>
