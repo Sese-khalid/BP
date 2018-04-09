@@ -14,26 +14,37 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<img style="width:10%;height:auto;" src="Images/BPiconfinal.GIF" alt="BP icon ">
 <!--Nav Bar Section -->
 <nav>
-<ul class="nav nav-tabs">
+<img style="width:20%;height:auto;" id="pic" src="Images/BPiconfinal.GIF" alt="BP icon ">
+<ul class="nav nav-tabs" id="nav">
   <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
+   <a class="nav-link active" href="BP.html">Homepage</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="About.html">About</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="Specials.html">Specials</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Social Media.html">BP in the news</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Links.html">Links</a>
   </li>
   <li class="nav-item">
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
 </nav>
-<br> 
-<br> 
+
+<div class="w3-content w3-section" >
+  <img class="mySlides w3-animate-bottom" src="Images/Reliable.png" style="width:40%">
+  <img class="mySlides w3-animate-bottom" src="Images/Honest.png" style="width:40%">
+  <img class="mySlides w3-animate-bottom" src="Images/Trustworthy.png" style="width:40%">
+</div>
+
 <br> 
 <form id="form">
   <div class="form-group">
@@ -51,18 +62,6 @@
 	Please provide a short desciption of your current needs and availability for a curtesy phone call
   </textarea>
 </form>
-
-
-<style>
-.mySlides {display:none;}
-</style>
-
-<div class="w3-content w3-section" >
-  <img class="mySlides w3-animate-bottom" src="Images/Reliable.png" style="width:40%">
-  <img class="mySlides w3-animate-bottom" src="Images/Honest.png" style="width:40%">
-  <img class="mySlides w3-animate-bottom" src="Images/Trustworthy.png" style="width:40%">
-</div>
-
 
 <footer>
 
@@ -105,7 +104,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4500);    
+    setTimeout(carousel, 5500);    
 }
 </script>
 
