@@ -11,41 +11,30 @@ https://htmlcolorcodes.com/
 
 body
 {
-	background-color: #FCFCFC;
+	
+	background-color: #2fccc4;
+	background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+	margins-left: 10px;
+	min-width: auto;
+	max-width: auto;
 }
 
-#pic {
-	margin-left: 40px;
+
+
+.mySlides {
+	margin-left: 270px;
+	z-index: +1;	
 }
+
+/**Nav bar style **/
 
 #nav {
 	background-color: ;
 	float: right;
 	margin-top: 50px;
-	font-size: 20px;
-	margin-right: 50px;
+	font-size: 19px;
+	margin-right: 40px;
 	z-index: 1;
-}
-
-.mySlides {
-	left: 150px;
-	font-size: 100px;
-	z-index: 1;	
-}
-
-/**Nav bar style **/
-
-
-
-footer {
-   	position: fixed;
-   	left: 0;
-   	bottom: 0;
-   	width: 100%;
-   	background-color: #122040;
-   	color: white;
-   	text-align: center;
-	height:50px;
 }
 
 
@@ -63,13 +52,14 @@ footer {
 }
 
 #form {
+	margin-top: 1px;
 	border-top: solid black;
 	width: 610px;
 	margin-left: 300px;
 	background-color: #99FF66;
 	text-decoration: overline;
 	text-transform: uppercase;
-	
+	z-index: -1;
 }
 
 
@@ -86,5 +76,22 @@ footer {
 	 z-index: -1;
 }
 
+#information {
+	position: absolute;
+	top: 900px;
+	left: 200px;
+	font-size: 27pt;
+}
 
+
+footer {
+   	position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	background-color: #122040;
+   	color: white;
+   	text-align: center;
+	height:100px;
+}
 
